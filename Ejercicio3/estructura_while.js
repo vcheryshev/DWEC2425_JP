@@ -17,3 +17,29 @@ function preguntarLletra() {
 }
 
 preguntarLletra();
+
+
+//Modifico el programa para que se haga solamente con un while
+
+let intentos=0;
+
+var letra="a";
+
+
+var letra2; 
+
+while(letra2!=letra && intentos<9){
+
+    letra2=prompt("Introduce una letra");
+    intentos++;
+    alert("sigue intentando");
+}
+
+if(letra2==letra){
+    alert("Has acertado la letra ");
+
+}
+
+if(intentos>9){
+    alert("te has pasado de intentos")
+}
